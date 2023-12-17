@@ -1,0 +1,82 @@
+body {
+  background: url("https://jamiesteedman.s3.eu-west-2.amazonaws.com/wp-content/uploads/2021/02/24111033/Rubiks_cube.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  font-family: fantasy;
+}
+
+.container {
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0 10px 12px black;
+  color: darkred;
+  max-width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: darkred;
+  color: red;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.button button:hover {
+  background-color: lightcoral;
+}
+
+.login {
+  margin-top: 10px;
+  color: red;
+}
+
+a {
+  color: darkred;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#result {
+  margin-top: 10px;
+}
+
+.navbar  {
+  overflow: hidden;
+  display: block;
+  padding: 15px;
+  width: fit-content;
+  
+}
+
+.navbar:hover{
+  background-color: red;
+  
+}

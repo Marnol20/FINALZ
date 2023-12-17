@@ -1,0 +1,404 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    text-align: center;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-width: 100px;
+    max-height: 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav-links {
+    margin-left: auto;
+}
+
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    transition: opacity 1.3s ease-in-out; 
+}
+
+#logo-container:hover {
+    transition: transform 1.3s;
+    transform: scale(1.5);
+    
+}
+
+nav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+  nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+
+nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+}
+
+
+nav a {
+    padding: .5em .8em;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a::before,
+nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+nav a::before {
+    right: 0;
+    top: 0;
+    transform: translate(-100%, 50%);
+}
+
+nav a:after {
+    left: 0;
+    bottom: 0;
+    transform: translate(100%, -50%)
+}
+
+nav a.a1::before {
+    border-top: 3px solid green;
+    border-right: 3px solid green;
+}
+
+nav a.a1:after {
+    border-bottom: 3px solid green;
+    border-left: 3px solid green;
+}
+
+nav a.a2::before {
+    border-top: 3px solid blue; 
+    border-right: 3px solid blue; 
+}
+
+nav a.a2:after {
+    border-bottom: 3px solid blue; 
+    border-left: 3px solid blue; 
+}
+
+nav a.a3::before {
+    border-top: 3px solid darkorange; 
+    border-right: 3px solid darkorange; 
+}
+
+nav a.a3:after {
+    border-bottom: 3px solid darkorange; 
+    border-left: 3px solid darkorange; 
+}
+
+nav a.a4::before {
+    border-top: 3px solid yellow; 
+    border-right: 3px solid yellow; 
+}
+
+nav a.a4:after {
+    border-bottom: 3px solid yellow; 
+    border-left: 3px solid yellow; 
+}
+
+nav a:hover:before,
+nav a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+nav a.a1:hover {
+    color: green;
+}
+
+nav a.a2:hover {
+    color: blue
+}
+
+nav a.a3:hover {
+    color: orangered;
+}
+
+nav a.a4:hover {
+    color: yellow;
+}
+
+.text {
+    width: 80%; 
+    margin: 55px;
+    text-align: center; 
+    padding: 70px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px; border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px black;;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text:hover {
+    transition: transform 0.3s;
+    transform: scale(1.2);
+}
+
+.video {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    z-index: -1;
+    width: 100%;
+    height: fit-content;
+}
+
+
+.color1 { 
+    color: darkgreen;
+}
+.color2 { 
+    color: white;
+}
+.color3 { 
+    color: blue;
+}
+.color4 { 
+    color: orange;
+}
+.color5 { 
+    color: yellow;
+}
+.color6 { 
+    color: red;
+}
+.color7 { 
+    color: darkgreen;
+}
+.color8 { 
+    color: white;
+}
+.color9 { 
+    color: blue;
+}
+.color10 { 
+    color: orange;
+}
+.color11 { 
+    color: yellow;
+}
+.color12 { 
+    color: red;
+}
+.color13 { 
+    color: darkgreen;
+}
+.color14 { 
+    color: white;
+}
+.color15 { 
+    color: blue;
+}
+.color16 { 
+    color: orange;
+}
+.color17 { 
+    color: yellow;
+}
+.color18 { 
+    color: red;
+}
+.color19 { 
+    color: darkgreen;
+}
+.color20 { 
+    color: white;
+}
+.color22 { 
+    color: blue;
+}
+.color21 { 
+    color: orange;
+}
+.color23 { 
+    color: yellow;
+}
+.color24 { 
+    color: red;
+}
+.color25 { 
+    color: darkgreen;
+}
+.color26 { 
+    color: white;
+}
+.color27 { 
+    color: blue;
+}
+.color28 { 
+    color: orange;
+}
+.color29 { 
+    color: yellow;
+}
+
+h1 {
+    display: inline-block;
+    margin: 0;
+}
+.space1,.space2,.space3,.space4,.space5,.space6,.space7,.space8 {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: larger;
+}
+.space1 h1,.space2 h1,.space3 h1,.space4,.space5,.space6,.space7,.space8 {
+    transition: color 0.3s ease-in-out; 
+}
+
+
+.color1:hover { 
+    color: red;
+    }
+    .color2:hover  { 
+    color: yellow;
+    }
+    .color3:hover  { 
+    color: orange;
+    }
+    .color4:hover  { 
+    color: blue;
+    }
+    .color5:hover  { 
+    color: white;
+    }
+    .color6:hover { 
+    color: darkgreen;
+    }
+    .color7:hover  { 
+    color: red;
+    }
+    .color8:hover  { 
+    color: yellow;
+    }
+    .color9:hover  { 
+    color: orange;
+    }
+    .color10:hover  { 
+    color: blue;
+    }
+    .color11:hover  { 
+    color: white;
+    }
+    .color12:hover  { 
+    color: darkgreen;
+    }
+    .color13:hover  { 
+    color: red;
+    }
+    .color14:hover  { 
+    color: yellow;
+    }
+    .color15:hover  { 
+    color: blue;
+    }
+    .color16:hover  { 
+    color: white;
+    }
+    .color17:hover  { 
+    color: darkgreen;
+    }
+    .color18:hover  { 
+    color: red;
+    }
+    .color19:hover  { 
+    color: yellow;
+    }
+    .color20:hover  { 
+    color: orange;
+    }
+    .color21:hover  { 
+    color: blue;
+    }
+    .color23:hover  { 
+    color: white;
+    }
+    .color24:hover  { 
+    color: darkgreen;
+    }
+    .color25:hover  { 
+    color: red;
+    }
+    .color26:hover  { 
+    color: yellow;
+    }
+    .color27:hover  { 
+    color: orange;
+    }
+    .color28:hover  { 
+    color: blue;
+    }
+    .color29:hover  { 
+    color: white;
+    }
+    
+    .colorful {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%; 
+    margin: 80px;
+    text-align: center; 
+    padding: 70px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px; border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);;
+    transition: opacity 1.3s ease-in-out;
+}
+.colorful:hover {
+    transition: transform 1.3s;
+    transform: scale(1.1);
+    
+}
+
+
+.aa {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 5px;
+    
+}
+
+.aa:hover {
+    background-color: darkblue;
+    transition: transform 0.3s;
+    transform: scale(1.2);
+}

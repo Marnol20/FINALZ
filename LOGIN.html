@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="LOGIN.css">
+    <script src="LOGIN.js"></script>
+</head>
+<body>
+    <div class="background">   
+        <div class="sidebar">
+            <a href="HOME.html"></a>
+        </div>
+        <div class="container">
+            <form id="loginForm">
+                <h1>LOGIN</h1>
+                <label for="username">Email:</label>
+                <input type="text" id="username" name="email" placeholder="Email"> 
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password" name="password">
+                <br>
+                <div class="button">
+                    <button type="button" onclick="Login()">Login</button>
+                </div>
+            </form>
+            <p id="result"></p>
+            <div class="signup">
+                Don't have an account?
+                <a href="SIGNUP.html">Signup Now</a>
+            </div>
+            <script>
+                function Login() {
+                    window.location.href = "TUTORIAL.html"; 
+                }
+            </script>
+        </div>
+    </div>
+    
+</body>
+</html>
